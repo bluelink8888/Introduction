@@ -1,0 +1,22 @@
+body {
+  font-family: "Times New Roman", Georgia; }
+
+.contact {
+  font-size: 18px;
+  text-align: center; }
+  .contact .name {
+    font-size: 36px; }
+
+.paragraphLine {
+  margin-top: 4px;
+  margin-bottom: 2px; }
+
+.fontMain {
+  font-size: 18px;
+  font-weight: bold; }
+
+.fontDetail {
+  margin-left: 5%;
+  font-size: 14px; }
+
+/*# sourceMappingURL=resume.css.map */
