@@ -2,11 +2,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="../assets/google-code-prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/google-code-prettify/prettify.css">
 <title>Java8 Demo</title>
+<style type="text/css">
+.cent-flexbox{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+</style>
 </head>
 <body>
-<h1></h1>
-<p></p>
-
+<div class="cent-flexbox">
+	<h3>紀錄java 8 新功能Stream </h3>
+</div>
+<div class="cent-flexbox">
+	<p><h3>Filter</h3></p>
+</div>
+<div style="width:0 auto">
+	<pre class="prettyprint">
+			String[] temp = {"123","12345","1234567"};
+			String[] filter = {"4","6"};
+			List &ltString> list = Arrays.asList(temp);
+				
+			List &ltString> filters = Arrays.asList(filter);
+				
+			for(String f : filters){
+			  list = list.stream().filter(l->l.contains(f)).collect(Collectors.toList());
+			}
+	</pre>
+</div>
 </body>
 </html>
